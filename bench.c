@@ -5,9 +5,10 @@
 #include <openssl/sha.h>
 #include <openssl/evp.h>
 #include "bench.h"
+#include <stdint.h>
 
 int main(int argc, char ** argv) {
-	char input[MAXLEN+1] = {0};
+	uint8_t input[MAXLEN+1] = {0};
 	double rate;
 	int interactive = isatty(fileno(stdout));
 

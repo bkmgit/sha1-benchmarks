@@ -1,7 +1,8 @@
 #include "bench.h"
 #include <openssl/evp.h>
+#include <stdint.h>
 
-void benchmark(char *input, size_t input_len, unsigned int loops) {
+void benchmark(uint8_t *input, size_t input_len, unsigned int loops) {
         EVP_MD_CTX *mdctx;
 	unsigned char md_value[EVP_MAX_MD_SIZE];
 	unsigned int md_len;

@@ -2,10 +2,11 @@
 #define _BENCH_H
 
 #include <stddef.h>
+#include <stdint.h>
 
 #define MAXLEN 512
-#define LOOPS 500000
+#define LOOPS 5000
 
-void benchmark(char *input, size_t input_len, unsigned int loops);
+void benchmark(uint8_t *input, size_t input_len, unsigned int loops);
 
 #endif

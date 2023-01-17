@@ -24,5 +24,7 @@ set title "Comparison of runtimes for various SHA1 implementations"
 plot "bench-git.log" using 1:2 with lines t "Git", \
      "bench-openssl.log" using 1:2 with lines t "Openssl Legacy", \
      "bench-openssl-evp.log" using 1:2 with lines t "Openssl EVP", \
-     "bench-nayuki.log" using 1:2 with lines t "Nayuki"
+     "bench-nayuki.log" using 1:2 with lines t "Nayuki", \
+     "bench-reid.log" using 1:2 with lines t "Reid"
+#     "bench-walton.log" using 1:2 with lines t "Walton"
 
