@@ -21,10 +21,14 @@ set title "Comparison of runtimes for various SHA1 implementations"
 # t "Col 0 XY" is the title for the legend
 
 
-plot "bench-git.log" using 1:2 with lines t "Git", \
-     "bench-openssl.log" using 1:2 with lines t "Openssl Legacy", \
-     "bench-openssl-evp.log" using 1:2 with lines t "Openssl EVP", \
-     "bench-nayuki.log" using 1:2 with lines t "Nayuki", \
-     "bench-reid.log" using 1:2 with lines t "Reid"
-#     "bench-walton.log" using 1:2 with lines t "Walton"
+plot "bench-git.log" using 1:2 with lines lw 3 t "Git", \
+     "bench-openssl.log" using 1:2 with lines lw 3 t "Openssl Legacy", \
+     "bench-openssl-evp.log" using 1:2 with lines lw 3 t "Openssl EVP", \
+     "bench-nayuki.log" using 1:2 with lines lw 3 t "Nayuki", \
+     "bench-nayuki-x8664.log" using 1:2 with lines lw 3 t "Nayuki x8664", \
+     "bench-reid.log" using 1:2 with lines lw 3 t "Reid", \
+     "bench-nettle.log" using 1:2 with lines lw 3 t "Nettle", \
+     "bench-gnutls.log" using 1:2 with lines lw 3 t "GNUTLS", \
+     "bench-ipp-crypto.log" using 1:2 with lines lw 3 t "ipp-crypto"
+#     "bench-walton.log" using 1:2 with lines lw 3 t "Walton"
 
